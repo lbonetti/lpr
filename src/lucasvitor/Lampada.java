@@ -30,35 +30,36 @@ public class Lampada {
             status=true;
             return status;}
         else
-            return status;       
+            return false;       
     }
     
     public boolean Apaga(){
-        if(status==true && vida>0){
+        if(status==true && vida>1){
             vida--;
             status=false;
             return status;
         }
         else
-            if (vida==0){
+            if (vida==1){
                 queimou=true;
                 return status;
             }
             else
-            return status;
+            return true;
     }
     
     public boolean Status(){
-        if (vida==0){
-            return status;
-        }
-        else
-            return status;
+        return status;
     }
     
     public boolean Queimou(){
         return queimou;
     }
+    
+    public int Vida(){
+        return vida;
+    }
+    
     
 }
 
@@ -82,7 +83,7 @@ class Usuario{
                 break;
             
                 case 2:
-                if(l.Apaga()==false)
+                if(l.Apaga()==false && l.Vida()!=5)
                     System.out.println("A lampada foi apagada com sucesso.");
                 else
                     System.out.println("A lampada nao pode ser apagada.");

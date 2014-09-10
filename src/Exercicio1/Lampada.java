@@ -6,7 +6,7 @@
 
 //Exercício 1
 
-package lucasvitor;
+package Exercicio1;
 
 import java.util.Scanner;
 

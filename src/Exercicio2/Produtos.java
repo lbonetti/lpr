@@ -12,19 +12,19 @@ package Exercicio2;
  */
 public class Produtos {
 
-    private String nome;
-    private double valor;
+    private String nome; //atributo privado nome
+    private double valor; //atributo privado valor
     
-    public Produtos(String nome, double valor){
-        this.nome=nome;
+    public Produtos(String nome, double valor){ //metodo construtor da classe produto, que ja define 
+        this.nome=nome;                         // o nome e o valor do produto
         this.valor=valor;
     }
 
-    public String DisplayProduto(){
+    public String DisplayProduto(){ //metodo que exibe o nome do produto
         return nome;
     }
     
-    public double DisplayValor(){
+    public double DisplayValor(){ //metodo que exibe o valor
         return valor;
     }
 

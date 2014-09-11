@@ -19,7 +19,7 @@ public class ControleMesaBar {
         prod = new Produtos[5];
         this.nmesa = nmesa;
         vtotal = 0;
-        prod[0] = new Produtos("Lanche", 7);
+        prod[0] = new Produtos("Lanche", 7); //instanciando os objetos produto
         prod[1] = new Produtos("Pizza", 13);
         prod[2] = new Produtos("Pastel", 10);
         prod[3] = new Produtos("Agua", 2.50);

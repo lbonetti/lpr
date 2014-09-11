@@ -15,14 +15,14 @@ import java.util.Scanner;
 public class Usuaria {
     public static void main(String[] args){
         boolean status=true;
-        ControleMesaBar mesa = new ControleMesaBar(1);
+        ControleMesaBar mesa = new ControleMesaBar(1); //instancia da classe ControleMesaBar
         Scanner scan = new Scanner(System.in);
         
         System.out.println("Bem vindo ao Sensação Drinks Night (Sob nova direcao)");
         System.out.println("Escolha seus produtos: ");
         mesa.ListarProdutos();
         
-        while(status==true){
+        while(status==true){ //loop para executar enquanto o usuario quiser fazer pedidos
             System.out.println("Informe o número do produto desejado: ");
             int n = scan.nextInt();
             System.out.println("Informe a quantidade");
@@ -49,10 +49,10 @@ public class Usuaria {
         System.out.println("2. Não");
         if(scan.nextInt()==1){ //condicao para ver se usuario quer pagar a taxa do garcom
             System.out.println("Em quanta pessoas estão na mesa?");
-            System.out.println("Valor por pessoa: " + mesa.DividirPorPessoa(scan.nextInt()));
+            System.out.println("Valor por pessoa: " + mesa.DividirPorPessoa(scan.nextInt())); //metodo que divide o valor por pessoa
         }
         
-        System.out.println("Valor total: R$ " + mesa.valorTotal());
+        System.out.println("Valor total: R$ " + mesa.valorTotal()); //exibe o valor total da mesa
         
     }
     

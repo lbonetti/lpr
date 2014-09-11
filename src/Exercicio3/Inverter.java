@@ -12,7 +12,7 @@ package Exercicio3;
  */
 public class Inverter {
     public StringBuffer inverter(StringBuffer str){
-        StringBuffer reverso = new StringBuffer(str); //método q inverte a string
-        return reverso.reverse();    
+        StringBuffer reverso = new StringBuffer(str); 
+        return reverso.reverse();    //método q inverte a string
     }
 }

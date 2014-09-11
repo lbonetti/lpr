@@ -41,8 +41,7 @@ public class ControleMesaBar {
     }
     
     public double DividirPorPessoa(int qnt){ //metodo que divide o valor pelo numero de pessoas
-        double vdividido = vtotal;
-        return vdividido / qnt;
+        return vtotal / qnt;
     }
     
     public double valorTotal(){ //metodo que retorna o valor total da mesa
